@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Henry | Ingeniero en Software</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -19,19 +19,22 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <!-- <li><a href="#experiencia">Experiencia</a></li> -->
                 <li><a href="#proyectos">Proyectos</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- HERO -->
         <section id="inicio" class="hero">
             <div class="hero-content">
+                <!-- TEXT -->
                 <div class="hero-text">
-                    <h1>Ingeniero en Software & AI</h1>
-                    <h2>Transformando Datos e Imágenes en Soluciones de Negocio Inteligentes</h2>
-                    <p>Especialista en Python, Deep Learning, y Visión por Computadora. Desarrollo,
-                        entreno, e implemento modelos de IA listos para producción y escalables.</p>
+                    <h1>Ingeniero en Software</h1>
+                    <h2>Especialista en Inteligencia Artificial y Visión por Computadora</h2>
+                    <p>Desarrollo modelos de Deep Learning y sistemas de Visión por Computadora basados en Python,
+                        PyTorch, TensorFlow, OpenCV y MLOps</p>
                     <div class="social-links">
                         <a href="https://github.com/hpmezam" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/hpmezam/" target="_blank"><i
@@ -48,7 +51,102 @@
                 </div>
             </div>
         </section>
-        <section id="experiencia" class="experiencia">
+        <!-- HABILIDADES TÉCNICAS -->
+        <section id="habilidades" class="skills-section">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <h3>Lenguajes de programación</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Inteligencia Artificial</h3>
+                    <ul>
+                        <li>PyTorch</li>
+                        <li>TensorFlow</li>
+                        <li>Keras</li>
+                        <li>Scikit-Learn</li>
+                        <li>Ultralytics</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Visión por Computadora</h3>
+                    <ul>
+                        <li>OpenCV</li>
+                        <li>MediaPipe</li>
+                        <li>YOLO</li>
+                        <li>RT-DETR</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Base de Datos</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>SQLite</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend & APIs</h3>
+                    <ul>
+                        <li>FastAPI</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>Angular</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>MLOps</h3>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Git & GitHub Actions</li>
+                        <li>Entornos virtuales</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Herramientas</h3>
+                    <ul>
+                        <li>VSCode</li>
+                        <li>Jupyter Notebook</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Desarrollo Móvil</h3>
+                    <ul>
+                        <li>Flutter</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li>Ingles (B1)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <!-- <section id="experiencia" class="experiencia">
             <h2 class="section-title">Experiencia Laboral</h2>
             <div class="timeline">
                 <div class="timeline-item">
@@ -76,64 +174,112 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="proyectos" class="projects">
             <h2 class="section-title">Proyectos Personales</h2>
             <div class="project-container">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="assets/fondo.jpg" alt="proyecto 1">
+
+                <!-- PROYECTO: Somnolencia -->
+                <a href="proyectos/somnolencia.html" class="project-card">
+                    <div class="project-img carousel">
+                        <img src="assets/somno_m.gif" alt="Demo Marco">
+                        <img src="assets/somno_h.gif" alt="Demo Henry" class="active">
                     </div>
                     <div class="project-info">
-                        <h3>Clasificador de Imágenes con Red Convolucional</h3>
-                        <p>Aplicación diseñada para gestionar diferentes tareas de tu día a día</p>
+                        <h3>Detección de Somnolencia con Transformers (RT-DETR)</h3>
+                        <p>
+                            Implementación de un sistema de visión por computadora basado en la arquitectura
+                            Transformers RT-DETR para detectar somnolencia en conductores en tiempo real, tanto en
+                            condiciones diurnas como nocturnas. Incluye despliegue en un sistema embebido con
+                            Raspberry Pi 3 B+.
+                        </p>
+
                         <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
+                            <span>RT-DETR</span>
+                            <span>Transformers</span>
+                            <span>PyTorch</span>
+                            <span>Ultralytics</span>
+                            <span>OpenCV</span>
+                            <span>Python</span>
+                            <span>Raspberry Pi</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- PROYECTO: KioskoH2M API -->
+                <a href="proyectos/kiosko.html" class="project-card">
+                    <div class="project-img carousel">
+                        <img src="assets/fondo.jpg" alt="Kiosko API demo 1" class="active">
+                        <img src="assets/fondo.jpg" alt="Kiosko API demo 2">
+                    </div>
+
+                    <div class="project-info">
+                        <h3>KioskoH2M – API para gestión de negocios</h3>
+                        <p>
+                            API REST construida con FastAPI para administrar ventas, clientes, productos,
+                            asistencias y pagos. Diseñada para pequeños negocios como restaurantes y kioscos,
+                            con modelo de datos robusto, control financiero y manejo de estados activos/inactivos.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>Python</span>
+                            <span>SQLModel</span>
+                            <span>SQLite</span>
+                            <span>Uvicorn</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- PROYECTO 3 -->
+                <!-- <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/fondo.jpg" alt="Detección de Somnolencia">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistema de Detección de Somnolencia</h3>
+                        <p>
+                            Sistema en tiempo real que analiza el estado ocular y el nivel de atención del conductor
+                            usando modelos de Visión por Computadora y umbrales adaptativos.
+                        </p>
+                        <div class="project-tech">
+                            <span>OpenCV</span>
+                            <span>MediaPipe</span>
+                            <span>Python</span>
+                            <span>Real-Time Processing</span>
                         </div>
                         <div class="project-links">
                             <a href="#" target="_blank"><i class="fas fa-link"></i></a>
                             <a href="#" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
+                </div> -->
+
+                <!-- PROYECTO 4 -->
+                <!-- <div class="project-card">
                     <div class="project-img">
-                        <img src="assets/fondo.jpg" alt="proyecto 1">
+                        <img src="assets/fondo.jpg" alt="Detección de Somnolencia">
                     </div>
                     <div class="project-info">
-                        <h3>App facturación</h3>
-                        <p>Aplicación diseñada para gestionar diferentes tareas de tu día a día</p>
+                        <h3>Detector de Emociones</h3>
+                        <p>
+                            Red neuronal entrenada con FER2013 para reconocer emociones faciales en tiempo real
+                            mediante técnicas de preprocesamiento y Data Augmentation.
+                        </p>
                         <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
+                            <span>OpenCV</span>
+                            <span>MediaPipe</span>
+                            <span>Python</span>
+                            <span>Real-Time Processing</span>
                         </div>
                         <div class="project-links">
                             <a href="#" target="_blank"><i class="fas fa-link"></i></a>
                             <a href="#" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="assets/fondo.jpg" alt="proyecto 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>App Detección de Somnolencia</h3>
-                        <p>Aplicación diseñada para gestionar diferentes tareas de tu día a día</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fas fa-link"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>

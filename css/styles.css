@@ -360,7 +360,7 @@ section {
 .project-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 0.5rem;
     margin-bottom: 1rem;
 }
 
@@ -499,4 +499,162 @@ footer {
         text-align: center;
         gap: 1rem;
     }
+}
+
+/* ========================= */
+/*        HABILIDADES        */
+/* ========================= */
+
+.skills-section {
+    padding: 80px 0;
+    width: 85%;
+    margin: auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.skill-category {
+    background: #1b1b1b;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #2d2d2d;
+    transition: 0.3s;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.skill-category h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.skill-category ul li {
+    margin: 8px 0;
+    color: #dcdcdc;
+}
+
+/* ========================= */
+/*     CARRUSEL EN TARJETA   */
+/* ========================= */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 270px; /* Ajusta según tu diseño */
+    overflow: hidden;
+}
+
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Primera imagen visible al inicio */
+.carousel img.active {
+    opacity: 1;
+}
+
+/* Animación automática */
+.carousel img:nth-child(1) {
+    animation: fade1 6s infinite;
+}
+.carousel img:nth-child(2) {
+    animation: fade2 6s infinite;
+}
+
+/* Secuencia */
+@keyframes fade1 {
+    0%   { opacity: 1; }
+    45%  { opacity: 1; }
+    50%  { opacity: 0; }
+    95%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fade2 {
+    0%   { opacity: 0; }
+    45%  { opacity: 0; }
+    50%  { opacity: 1; }
+    95%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* ====================== */
+/*   PAGINA KIOSKO.HTML   */
+/* ====================== */
+
+.project-detail {
+    max-width: 900px;
+    margin: auto;
+    color: var(--gray-text);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background: var(--card-bg);
+    padding: 1.2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.architecture {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.architecture img {
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.code-block {
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+}
+
+.demo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.demo-img {
+    width: 350px;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
 }

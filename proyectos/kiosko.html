@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KioskoH2M API | Henry Meza</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAV (MISMO HEADER DEL PORTAFOLIO) -->
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                Henry <span>Meza</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#inicio">Portafolio</a></li>
+                <!-- <li><a href="../index.html#experiencia">Experiencia</a></li>
+                <li><a href="../index.html#proyectos">Proyectos</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" style="padding-top: 8rem;">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>KioskoH2M – API REST para gestión de negocios</h1>
+                <h2>Sistema backend rápido, modular y escalable construido con FastAPI</h2>
+                <p>
+                    API diseñada para la administración de ventas, clientes, productos, asistencias 
+                    y pagos en pequeños negocios como restaurantes, comedores y kioscos. 
+                    Forma parte del ecosistema <strong>DeepVisionH2M</strong>.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/hpmezam/KioskoH2M-api" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="../assets/kiosko_1.gif" alt="kiosko demo">
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCRIPCIÓN GENERAL -->
+    <section>
+        <h2 class="section-title">Descripción del Proyecto</h2>
+
+        <div class="project-detail">
+            <p>
+                <strong>KioskoH2M API</strong> es una solución backend moderna que centraliza la gestión de operaciones 
+                comerciales para pequeños negocios. Su modelo de datos contempla la administración de personas, empresas,
+                productos, ventas, pagos, categorías y asistencia, manteniendo integridad y estados históricos.
+            </p>
+
+            <p>
+                Está construida con <strong>FastAPI</strong> y <strong>SQLModel</strong>, garantizando validación sólida, 
+                consultas rápidas y escalabilidad. Pensada para integrarse con aplicaciones web, móviles o sistemas POS.
+            </p>
+        </div>
+    </section>
+
+    <!-- CARACTERÍSTICAS -->
+    <section>
+        <h2 class="section-title">Características Principales</h2>
+
+        <div class="features-grid">
+            <div class="feature-card"><i class="fas fa-users"></i> Gestión de personas</div>
+            <div class="feature-card"><i class="fas fa-building"></i> Gestión de empresas</div>
+            <div class="feature-card"><i class="fas fa-box"></i> Productos y categorías</div>
+            <div class="feature-card"><i class="fas fa-shopping-cart"></i> Ventas y facturación</div>
+            <div class="feature-card"><i class="fas fa-hand-holding-usd"></i> Deudas y abonos</div>
+            <div class="feature-card"><i class="fas fa-calendar-check"></i> Control de asistencia</div>
+            <div class="feature-card"><i class="fas fa-database"></i> Modelo relacional robusto</div>
+            <div class="feature-card"><i class="fas fa-bolt"></i> Alto rendimiento con FastAPI</div>
+            <div class="feature-card"><i class="fas fa-history"></i> Estados activos/inactivos</div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+    <section>
+        <h2 class="section-title">Tecnologías Utilizadas</h2>
+
+        <div class="project-tech large">
+            <span>FastAPI</span>
+            <span>Python</span>
+            <span>SQLModel</span>
+            <span>SQLite</span>
+            <span>Pydantic</span>
+            <span>Uvicorn</span>
+            <span>REST API</span>
+        </div>
+    </section>
+
+    <!-- ARQUITECTURA -->
+    <section>
+        <h2 class="section-title">Arquitectura del Sistema</h2>
+
+        <div class="architecture">
+            <img src="../assets/kiosko_diagrama.png" alt="arquitectura kiosko">
+            <p>Modelo modular basado en capas: Routes → Services → Repository → Modelos SQLModel → Base de datos.</p>
+        </div>
+    </section>
+
+    <!-- ENDPOINTS -->
+    <section>
+        <h2 class="section-title">Ejemplo de Endpoints</h2>
+
+        <div class="code-block">
+<pre>
+# Obtener todos los productos
+GET /productos/
+
+# Registrar una venta
+POST /ventas/
+
+# Registrar un pago o abono
+POST /pagos/
+
+# Obtener clientes con saldo pendiente
+GET /clientes/deudas/
+</pre>
+        </div>
+    </section>
+
+    <!-- DEMO -->
+    <section>
+        <h2 class="section-title">Demo del Proyecto</h2>
+        <div class="demo-container">
+            <img src="../assets/kiosko_2.gif" class="demo-img" alt="demo kiosko api">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Henry Meza - Todos los derechos reservados </p>
+            <div class="social-links">
+                <a href="https://github.com/hpmezam" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hpmezam/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@deepvisionh2m" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@deepvisionh2m" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

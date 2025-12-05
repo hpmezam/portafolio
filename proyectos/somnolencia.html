@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detección de Somnolencia | Henry Meza</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                Henry <span>Meza</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#inicio">Portafolio</a></li>
+                <li><a href="#rtdetr">RT-DETR</a></li>
+                <li><a href="#resumen">Resumen</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#demo">Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO DEL PROYECTO -->
+    <section id="rtdetr" class="hero" style="padding-top: 8rem;">
+        <div class="hero-text" style="max-width: 800px; margin:auto; text-align:center;">
+            <h1>Detección de Somnolencia con Transformers RT-DETR</h1>
+            <h2>Visión por Computadora en Tiempo Real para Conductores</h2>
+            <p style="min-width:unset;">
+                Proyecto basado en una arquitectura Transformer optimizada para detectar somnolencia mediante análisis
+                ocular en tiempo real. Entrenado sobre infraestructura HPC con GPU NVIDIA A100 y desplegado en una
+                Raspberry Pi 3 B+.
+            </p>
+        </div>
+    </section>
+
+    <section id="resumen">
+
+        <h2 class="section-title">Resumen del Proyecto</h2>
+
+        <div class="project-detail-card" style="
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            max-width: 900px;
+            margin:auto;
+        ">
+
+            <p style="color: var(--gray-text); font-size:1.1rem; margin-bottom:1.5rem;">
+                Este sistema de visión artificial detecta estados de somnolencia mediante un modelo Transformer
+                RT-DETR, capaz de identificar ojos abiertos/cerrados con gran precisión incluso en condiciones difíciles
+                (nocturnidad, gafas, accesorios faciales).
+            </p>
+
+            <ul style="margin-left:1rem; color: var(--light-text); line-height:1.8;">
+                <li>⭐ Modelo RT-DETR optimizado para clasificación de ojos.</li>
+                <li>⭐ Entrenado sobre GPU NVIDIA A100 (40 GB) en la infraestructura HPC CEDIA.</li>
+                <li>⭐ Dataset propio 128×128 px balanceado vs desbalanceado.</li>
+                <li>⭐ Deploy en Raspberry Pi 3 B+ con inferencia en tiempo real.</li>
+                <li>⭐ 95.21% de precisión en ambientes diurnos y nocturnos.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+    <section id="tecnologias">
+        <h2 class="section-title">Tecnologías Utilizadas</h2>
+
+        <div class="project-tech" style="justify-content:center;">
+            <span>Python</span>
+            <span>PyTorch</span>
+            <span>Ultralytics</span>
+            <span>RT-DETR</span>
+            <span>Transformers</span>
+            <span>OpenCV</span>
+            <span>NVIDIA A100</span>
+            <span>HPC CEDIA</span>
+            <span>Raspberry Pi</span>
+        </div>
+    </section>
+
+    <!-- MÉTRICAS -->
+    <section id="metricas">
+        <h2 class="section-title">Resultados del Modelo</h2>
+
+        <div style="
+            background: var(--card-bg);
+            padding:2rem;
+            border-radius:12px;
+            border:1px solid var(--border-color);
+            max-width:900px;
+            margin:auto;
+        ">
+
+            <h3 style="color:var(--primary-color); margin-bottom:1rem;">Métricas Principales</h3>
+
+            <ul style="line-height:1.8; color:var(--gray-text);">
+                <li><strong>Exactitud general:</strong> 95.21%</li>
+                <li><strong>Precisión:</strong> 95.47%</li>
+                <li><strong>Recall:</strong> 95.75%</li>
+                <li><strong>F1 Score:</strong> 95.61%</li>
+            </ul>
+
+            <h3 style="color:var(--primary-color); margin:1.5rem 0 1rem;">Rendimiento en condiciones reales</h3>
+
+            <ul style="line-height:1.8; color:var(--gray-text);">
+                <li><strong>Gafas normales:</strong> 94.58% precisión</li>
+                <li><strong>Gafas de sol:</strong> 94.32% precisión (muy destacado vs otros modelos)</li>
+                <li><strong>Día:</strong> 91.35% F1-score</li>
+                <li><strong>Noche:</strong> 92.53% F1-score</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- DEMO -->
+    <section id="demo">
+        <h2 class="section-title">Demo</h2>
+
+        <p style="text-align:center; color:var(--gray-text); margin-bottom:2rem;">
+            Puedes visualizar un ejemplo de inferencia del modelo en tiempo real.
+        </p>
+
+        <div style="text-align:center;">
+            <img src="../assets/demo-somnolencia.gif" 
+                 alt="demo somnolencia" 
+                 style="border-radius:12px; border:1px solid var(--border-color); max-width:600px;">
+        </div>
+
+    </section>
+
+    <!-- BOTONES -->
+    <section style="text-align:center;">
+        <a href="https://github.com/hpmezam/tesis_somnolencia" class="btn" target="_blank">
+            <i class="fab fa-github"></i> Ver código fuente
+        </a>
+
+        <a href="../index.html#proyectos" class="btn" style="margin-left:1rem;">
+            Volver a Proyectos
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Henry Meza - Todos los derechos reservados </p>
+            <div class="social-links">
+                <a href="https://github.com/hpmezam" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hpmezam/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@deepvisionh2m" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@deepvisionh2m" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
